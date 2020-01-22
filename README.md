@@ -9,7 +9,7 @@ Today I will tell you a wonderful story. <br>
 <br>
 Some time ago in a weekend, I turned the TV on and the only thing that was talked about was a football match that would happen in that day. And I started to think that, then in that day the game would passe in the TV, and in the end of the day, all the news programs would be discussing how the game. <br>
 <br>
-Because that was kind of boring, I decided that I would do something different,but what could I do? <br>
+Because that was kind of boring, I decided that I would do something different, but what could I do? <br>
 <br>
 What could I do of fun in that day so that I wouldn't felt so bored? <br>
 <br>
