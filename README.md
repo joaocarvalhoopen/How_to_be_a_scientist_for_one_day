@@ -140,8 +140,8 @@ by John R. Koza
 * Genetic Programming III: Darwinian Invention and Problem Solving 1999 <br>
 by John R. Koza and Forrest H. Bennett III
 
-* Genetic Programming IV: Routine Human-Competitive Machine 2003
-by John R. Koza and Martin A. Keane <br>
+* Genetic Programming IV: Routine Human-Competitive Machine 2003 <br>
+by John R. Koza and Martin A. Keane 
 
 This technique is really very powerful and while we study it, we start literally thinking about all the things that can be made with it. Prof. Koza and other have shown that is possible to rediscover patent's with this technique and they did the first patent totally made by a computer. <br>
 <br>
