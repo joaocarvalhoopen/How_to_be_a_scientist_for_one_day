@@ -47,14 +47,14 @@ When, sometime ago, I was implementing the ArcTan(x/y) in the area of acoustics,
 
 The equation that Prof. Lyons used in the article was: <br>
 <br>
-Arctan(q/i) = (q*i)  /  ( i^2 + 0.28125 *(q^2) ) <br>
+Arctan(q/i) = (q x i)  /  ( i^2 + 0.28125 x (q^2) ) <br>
 with -1 <=  q / i <= 1 that means that the angle phi of arc tan is between –pi/4 <= phi <= pi/4  <br>
 <br>
 In the article the equation is then expanded so that it adapts to the 8 octants of the argant plane. <br>
 <br>
 One other important note that is explained in the article by Prof. Lyons, is about the constant in the equation: <br>
 <br> 
-*“The product 0.28125*Q^2 equal to(1/4 +  1/32)*Q2,  so  we  can  implement  the  product  by  adding  Q^2 shifted right by two bits to Q^2 shifted right by five bits.”* <br>
+*“The product 0.28125 x Q^2 equal to(1/4 +  1/32)x Q2,  so  we  can  implement  the  product  by  adding  Q^2 shifted right by two bits to Q^2 shifted right by five bits.”* <br>
 <br>
 And explains why the multiplication by that constant is something computationally simple and light to do on a DSP or micro-controllers without floating point unit, because we only need to make shifts. <br>
 <br>
@@ -63,7 +63,7 @@ Well, then the objective of our research is to find one equation that is in term
 ## ...starting to attack the problem....
 
 The operations that this equation of arctan(x/y) can have are the following: <br>
-+, -, *, /, neg(negative of a number), variable x, variable y and each one of the possible binary constants. <br>
++, -, x, /, neg(negative of a number), variable X, variable Y and each one of the possible binary constants. <br>
 <br>
 List of the binary constants that can be multiplied or divided using only shift left or shift right <br>
 
@@ -77,7 +77,7 @@ List of the binary constants that can be multiplied or divided using only shift 
    2^6 = 64     and  1 /64
    2^7 = 128    and  1 /128
    2^8 = 254    and  1 /254
-   2^9 =  512   and  1 /512
+   2^9 = 512    and  1 /512
    2^10 = 1024  and  1 /1024
 ```
 
@@ -89,8 +89,8 @@ We would have 15 nodes, if we imagine one tree with 15 nodes we would have the f
 
 ```
   _____+_____
-  __-_____*__
-  _1_x___y_x_
+  __-_____x__
+  _1_X___Y_X_
 
   ______________28______________
   ____28_________________28_____
@@ -101,9 +101,9 @@ We would have 15 nodes, if we imagine one tree with 15 nodes we would have the f
 
 Doing some back of envelope calculations and knowing that the real value is a little bit smaller because not every possible tree is a complete tree, if a variable or a constant is in one node and there is no node bellow. But at least is an indicative value. <br>
 <br>
-The total number of different combinations would be the number of combinations in each node raised to the power of the number of nodes. Number_combinations ^ number_of_nodes = 28^15= 5.09*10^21 . This is the number of different combinations and it is really hugh, we clearly can't generate all combinations and test them all. <br>
+The total number of different combinations would be the number of combinations in each node raised to the power of the number of nodes. Number_combinations ^ number_of_nodes = 28^15= 5.09x10^21 . This is the number of different combinations and it is really hugh, we clearly can't generate all combinations and test them all. <br>
 <br>
-Just for a comparison, a processor works at 5 GHZ that is 5*10^9, and from 10^9 to 10^21 goes a great distance! For this reason, an exhaustive search and test (brute force approach) of all the possible equations with 15 nodes is simply impossible with the computers that we have. <br>
+Just for a comparison, a processor works at 5 GHZ that is 5x10^9, and from 10^9 to 10^21 goes a great distance! For this reason, an exhaustive search and test (brute force approach) of all the possible equations with 15 nodes is simply impossible with the computers that we have. <br>
 <br>
 Our first idea doesn't work and we have to let it go! <br>
 <br>
