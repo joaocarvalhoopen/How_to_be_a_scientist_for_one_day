@@ -7,7 +7,7 @@ Hello to all of you, <br>
 <br>
 Today I will tell you a wonderful story. <br>
 <br>
-Some time ago in a weekend, I turned the TV on and the only thing that was talked about was a football match that would happen in that day. And I started to think that, then in that day the game would passe in the TV, and in the end of the day, all the news programs would be discussing how the game. <br>
+Some time ago in a weekend, I turned the TV on and the only thing that was talked about was a football match that would happen in that day. And I started to think that, then in that day the game would be in the TV, and in the end of the day, all the news programs would be discussing the game. <br>
 <br>
 Because that was kind of boring, I decided that I would do something different, but what could I do? <br>
 <br>
@@ -15,7 +15,7 @@ What could I do of fun in that day so that I wouldn't felt so bored? <br>
 <br>
 How about, if I tried to be a scientist for one day? Trying to be in the skin of a researcher for one day! I'm not a researcher and even less a scientist, and because of this I would simply be playing and pretending to be a scientist. But because it would be only for one day, it could be something fun to do! <br>
 <br>
-I would see this as a kind of fun adventure! Kind of, a walk in the world of Alice in the Wonderland :-D <br>
+I would see this as a fun adventure! Kind of, a walk in the world of Alice in the Wonderland :-D <br>
 <br>
 
 ## What would be the research about?
@@ -26,14 +26,14 @@ What would be my research about? <br>
 <br>
 It should be something very precise and it should not be very complex, something that I could do, test and run experiments in one day.<br>
 <br>
-Then I remember something that I had read some time ago in a fantastic book of DSP - Digital Signal Processing: <br> 
+Then I remembered something that I had read some time ago in a fantastic book of DSP - Digital Signal Processing: <br> 
 
 * Understanding Digital Signal Processing 3rd Edition <br>
 by Richard G. Lyons 
 
-In this book, is written that the calculation of the arc of tangent, arc tan( x / y ) is used heavily in DSP and because it's normal calculation is made using a Taylor series expansion it would be very heavy in terms of performance to calculate each value of the function. <br>
+In this book, is written that: the calculation of the arc of tangent, arc tan( x / y ) is heavily used in DSP and because it's normal calculation is made using a Taylor series expansion it would be very slow in terms of performance to calculate each value of the function. <br>
 <br>
-When this function is calculated in DSP, normally there is the need to perform this calculation a high number of times per second. For this reason, we have to find a simple way to calculate the arctan, without making use of the Taylor series expansion. Normally what is used is one approximation of that function that is computationally light. <br>
+When this function is calculated in DSP, normally there is the need to perform this calculation a high number of times per second. For this reason, we have to find a simple way to calculate the arctan, without making use of the Taylor series expansion. Normally what is used is one approximation of that function that is computationally lighter. <br>
 <br>
 Prof. Lyons says clearly in his book, that if some reader finds a better approximation to the existing ones that he should contact him! <br>
 <br>
